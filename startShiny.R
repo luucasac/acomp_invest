@@ -19,11 +19,11 @@ app_packages <- c(
   ,"rhandsontable"
 )
 
-if (!sum(app_packages %in% installed.packages()) == length(app_packages)) {
+if (sum(app_packages %in% installed.packages()) < length(app_packages)) {
   
   # install if is not
   
-  install.packagess(
+  install.packages(
     pkgs = app_packages[!app_packages %in% installed.packages()]
   )
   
@@ -52,4 +52,4 @@ source("R/funcoes_geracao_arquivos.R", encoding = "UTF-8")
 source("R/funcoes_gerais.R", encoding = "UTF-8")
 
 
-shinyAppDir("./shiny/")
+shinyAppDir("shiny/")
