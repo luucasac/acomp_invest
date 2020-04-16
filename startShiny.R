@@ -49,7 +49,6 @@ library(rhandsontable)
 source("R/funcoes_atualizacao.R", encoding = "UTF-8")
 source("R/funcoes_analise.R", encoding = "UTF-8")
 source("R/funcoes_geracao_arquivos.R", encoding = "UTF-8")
-source("R/funcoes_gerais.R", encoding = "UTF-8")
 
 
 shinyAppDir("shiny/")
