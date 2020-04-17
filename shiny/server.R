@@ -3,6 +3,14 @@
 ##########################   SERVER SIDE FUNCTIONS  ###########################
 ###############################################################################
 
+# sourcing scripts with functions for the app
+
+source("../R/funcoes_atualizacao.R", encoding = "UTF-8")
+source("../R/funcoes_analise.R", encoding = "UTF-8")
+source("../R/funcoes_geracao_arquivos.R", encoding = "UTF-8")
+
+
+
 shinyServer(function(input, output, session) {
   
   # observar o evento que cria uma nova carteira
